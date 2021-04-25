@@ -1,7 +1,23 @@
-- clean: ['~']
+- defaults:
+    link:
+      create: true
+      relink: true
 
 - link:
-    ~/.gitconfig: gitconfig
-    ~/.zshrc: zshrc
+    # Shell stuff
+    ~/.aliases: shell/.aliases
+    ~/.functions: shell/.functions
+    ~/.zshrc: shell/.zshrc
+    ~/.p10k.zsh: shell/.p10k.zsh
+
+    # Git
+    ~/.gitignore: git/.gitignore
+    ~/.gitconfig: git/.gitconfig
 
 
+- clean: ['~']
+
+- shell:
+    # Install Antigen
+    - curl -L git.io/antigen > ~/.dotfiles/antigen.zsh
+    - [git submodule update --init --recursive, Installing submodules]

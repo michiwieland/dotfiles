@@ -1,0 +1,28 @@
+alias vim="vim -p"
+alias ll="ls -lah --color=auto"
+alias sudo='sudo ' # See https://askubuntu.com/questions/22037/aliases-not-available-when-using-sudo
+
+# because typing 'cd' is A LOT of work!!
+alias ..='cd ../'
+alias ...='cd ../../'
+alias ....='cd ../../../'
+alias .....='cd ../../../../'
+
+# Disk usage and finding directory or files
+alias dud='du -d 1 -h'
+alias duf='du -sh *'
+alias fd='find . -type d -name'
+alias ff='find . -type f -name'
+
+# History
+alias h='history'
+alias hgrep="fc -El 0 | grep"
+
+
+# git alias
+function gc { git commit -m "$@"; }
+alias gcm="git checkout master";
+alias gs="git status";
+alias gpull="git pull";
+alias gf="git fetch";
+alias gfa="git fetch --all";

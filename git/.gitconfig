@@ -2,13 +2,12 @@
 	name = Michael Wieland
 	email = michi.wieland@hotmail.com
 
-[github]W
+[github]
 	user = michiwieland
 
 [core]
     whitespace = warn
 	editor = vim
-
 
 [diff]
 	renames = copies
