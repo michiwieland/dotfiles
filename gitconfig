@@ -1,0 +1,23 @@
+[user]
+	name = Michael Wieland
+	email = michi.wieland@hotmail.com
+
+[github]W
+	user = michiwieland
+
+[core]
+    whitespace = warn
+	editor = vim
+
+
+[diff]
+	renames = copies
+
+[pull]
+	rebase = true
+
+[push]
+	default = simple
+    
+[commit]
+	template = ~/.git-commit-template.txt
