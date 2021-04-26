@@ -18,7 +18,6 @@ alias ff='find . -type f -name'
 alias h='history'
 alias hgrep="fc -El 0 | grep"
 
-
 # git alias
 function gc { git commit -m "$@"; }
 alias gcm="git checkout master";
@@ -26,3 +25,18 @@ alias gs="git status";
 alias gpull="git pull";
 alias gf="git fetch";
 alias gfa="git fetch --all";
+
+# Kubernetes
+alias k=kubectl
+
+alias kg='kubectl get'
+alias kgp='kubectl get pods'
+alias kgns='kubectl get namespaces'
+alias kgall='kubectl get ingress,service,deployment,pod'
+
+alias kuc='kubectl config use-context'
+alias ksc='kubectl config set-context "$(kubectl config current-context)"'
+alias kns='ksc --namespace'
+
+alias kpf='kubectl port-forward '
+alias kp='kubectl proxy'
