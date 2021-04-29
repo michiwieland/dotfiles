@@ -10,19 +10,22 @@ alias .....='cd ../../../../'
 
 # Disk usage and finding directory or files
 alias dud='du -d 1 -h'
-alias duf='du -sh *'
 alias fd='find . -type d -name'
 alias ff='find . -type f -name'
 
+# Default arguments
+alias ps='ps -aux'
+alias mkdir='mkdir -pv'
+alias wget='wget -c'
+alias grep='grep --color=auto'
+
 # History
 alias h='history'
-alias hgrep="fc -El 0 | grep"
 
 # git alias
-function gc { git commit -m "$@"; }
 alias gcm="git checkout master";
 alias gs="git status";
-alias gpull="git pull";
+alias gp="git pull";
 alias gf="git fetch";
 alias gfa="git fetch --all";
 
@@ -32,11 +35,4 @@ alias k=kubectl
 alias kg='kubectl get'
 alias kgp='kubectl get pods'
 alias kgns='kubectl get namespaces'
-alias kgall='kubectl get ingress,service,deployment,pod'
-
-alias kuc='kubectl config use-context'
-alias ksc='kubectl config set-context "$(kubectl config current-context)"'
-alias kns='ksc --namespace'
-
 alias kpf='kubectl port-forward '
-alias kp='kubectl proxy'
