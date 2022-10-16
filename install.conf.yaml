@@ -3,19 +3,13 @@
       create: true
       relink: true
 
-- link:
-    # Shell stuff
-    ~/.aliases: shell/.aliases
-    ~/.functions: shell/.functions
-    ~/.zshrc: shell/.zshrc
-    ~/.p10k.zsh: shell/.p10k.zsh
-
-    # Git
-    ~/.gitignore: git/.gitignore
-    ~/.gitconfig: git/.gitconfig
-
-
 - clean: ['~']
+
+- link:
+    ~/.aliases: shell/aliases.sh
+    ~/.functions: shell/functions.sh
+    ~/.zshrc: zshrc
+    ~/.gitconfig: gitconfig
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]

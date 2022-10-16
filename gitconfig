@@ -7,7 +7,7 @@
 
 [core]
     whitespace = warn
-	editor = vim
+	editor = code
 
 [diff]
 	renames = copies

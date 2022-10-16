@@ -13,7 +13,6 @@ function whos_listening () {
 	lsof -n -i4TCP:$1 | grep LISTEN
 }
 
-
 # Git commit
 function gc { 
 	git commit -am "$1"; 
